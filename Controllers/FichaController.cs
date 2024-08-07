@@ -18,6 +18,12 @@ public class FichaController : Controller
         return View();
     }
 
+    public IActionResult Historico(string cpf)
+    {
+        ViewData["Cpf"] = cpf;
+        return View();
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
