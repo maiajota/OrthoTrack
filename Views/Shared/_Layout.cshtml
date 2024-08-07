@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - OrthoTrack</title>
     <link rel="stylesheet" href="~/lib/uikit/dist/uikit.min.css" />
-    
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/OrthoTrack.styles.css" asp-append-version="true" />
 </head>
@@ -15,13 +14,13 @@
             <div class="uk-container">
                 <div uk-navbar>
                     <div class="uk-navbar-left">
-                        <a class="uk-navbar-item uk-logo" href="#" aria-label="Back to Home"><img src="~/assets/img/logo.png" alt="Logo"></a>
+                        <a class="uk-navbar-item uk-logo" aria-label="Back to Home">OrthoTrack</a>
                         <ul class="uk-navbar-nav">
                             <li>
-                                <a href="#">Cadastrar Paciente</a>
+                                <a href="/">Cadastrar Paciente</a>
                             </li>
                             <li>
-                                <a href="#">Ficha de Paciente</a>
+                                <a href="/ficha">Ficha de Paciente</a>
                             </li>
                         </ul>
                     </div>
@@ -32,6 +31,7 @@
     @RenderBody()
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/uikit/dist/uikit.min.js"></script>
+    <script src="~/lib/uikit/dist/uikit-icons.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>

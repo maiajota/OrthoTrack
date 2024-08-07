@@ -4,11 +4,11 @@ using OrthoTrack.Models;
 
 namespace OrthoTrack.Controllers;
 
-public class HomeController : Controller
+public class FichaController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+    private readonly ILogger<FichaController> _logger;
 
-    public HomeController(ILogger<HomeController> logger)
+    public FichaController(ILogger<FichaController> logger)
     {
         _logger = logger;
     }
