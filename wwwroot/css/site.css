@@ -7,3 +7,11 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+.uk-table-hover{
+  cursor: pointer;
+}
+
+.cursor-button{
+  cursor: pointer;
+}
