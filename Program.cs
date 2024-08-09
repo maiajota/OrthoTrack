@@ -24,4 +24,9 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapControllerRoute(
+    name: "fichaHistorico",
+    pattern: "ficha/{cpf}",
+    defaults: new { controller = "Ficha", action = "Historico" });
+
 app.Run();

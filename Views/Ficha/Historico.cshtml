@@ -1,0 +1,81 @@
+@{
+    ViewData["Title"] = "Histórico do paciente";
+}
+
+@* <p>CPF: @ViewData["Cpf"]</p> *@
+<main class="uk-container">
+    <div class="uk-flex">
+        <h1 class="uk-margin-remove-bottom">Ana Beatriz Oliveira Silva</h1>
+        <span class="cursor-button uk-margin-small-left uk-margin-auto-vertical" uk-icon="more-vertical" uk-toggle="target: #patient-info-modal" uk-tooltip="Mais informações"></span>
+        <div id="patient-info-modal" uk-modal>
+            <div class="uk-modal-dialog uk-modal-body">
+                <button class="uk-modal-close-default" type="button" uk-close></button>
+                <div class="uk-flex">
+                    <h2 class="uk-modal-title uk-margin-remove-bottom">Informações adicionais</h2>
+                    <span class="cursor-button uk-margin-small-left uk-margin-auto-vertical" uk-icon="pencil" uk-tooltip="Editar"></span>
+                </div>
+                <p class="uk-text-default">
+                    <span class="uk-text-bolder">CPF:</span> 
+                    123.456.789-00
+                </p>
+                <p class="uk-text-default uk-text-normal">
+                    <span class="uk-text-bolder">RG:</span> 
+                    12.345.678-9
+                </p>
+                <p class="uk-text-default uk-text-normal">
+                    <span class="uk-text-bolder">Data de Nascimento:</span> 
+                    07/05/1975
+                </p>
+                <p class="uk-text-default uk-text-normal">
+                    <span class="uk-text-bolder">Telefone:</span> 
+                    (83) 9 9954-3315
+                </p>
+                <p class="uk-text-default uk-text-normal">
+                    <span class="uk-text-bolder">Endereço:</span> 
+                     Rua Rodrigues de Carvalho, 89
+                </p>
+            </div>
+        </div>
+    </div>
+    <table class="uk-table uk-table-divider">
+        <thead>
+            <tr>
+                <th>Dente</th>
+                <th>Descrição</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>11</td>
+                <td>Obturação de cárie</td>
+                <td>01/08/2024</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>Canal</td>
+                <td>15/07/2024</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Restauração com resina</td>
+                <td>20/06/2024</td>
+            </tr>
+            <tr>
+                <td>45</td>
+                <td>Extração</td>
+                <td>10/05/2024</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Clareamento dental</td>
+                <td>22/04/2024</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>Limpeza e profilaxia</td>
+                <td>30/03/2024</td>
+            </tr>
+        </tbody>
+    </table>
+</main>
